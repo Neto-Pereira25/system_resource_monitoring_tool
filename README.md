@@ -1,4 +1,4 @@
-# **Resource Watchdog**  
+# **📊 SysCheck**  
 
 Uma aplicação Streamlit para monitoramento de recursos do sistema (CPU, memória, disco) em tempo real.  
 
