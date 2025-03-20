@@ -1,52 +1,56 @@
-# Resource Watchdog
+# **Resource Watchdog**  
 
-A Streamlit application for monitoring system resources (CPU, memory, disk) in real-time.
+Uma aplicação Streamlit para monitoramento de recursos do sistema (CPU, memória, disco) em tempo real.  
 
-## Features
+## **Funcionalidades**  
 
-- Real-time monitoring of CPU usage (overall and per-core)
-- Memory usage tracking with detailed metrics
-- Disk usage analysis across all partitions
-- Historical data visualization with interactive charts
-- Customizable update interval and history length
+- Monitoramento em tempo real do uso da CPU (geral e por núcleo).  
+- Rastreamento do uso da memória com métricas detalhadas.  
+- Análise do uso do disco em todas as partições.  
+- Visualização de dados históricos com gráficos interativos.  
+- Personalização do intervalo de atualização e do tamanho do histórico.  
 
-## Installation
+## **Instalação**  
 
-1. Clone this repository
-2. Install the required dependencies:
+1. Clone este repositório.  
+2. Crie um ambiente virtual e ative-o:  
+
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate      # Windows
+```  
+
+3. Instale as dependências necessárias:  
 
 ```bash
 pip install -r requirements.txt
-```
+```  
 
-3. Run the application:
+4. Execute a aplicação:  
 
 ```bash
 streamlit run app.py
-```
+```  
 
-## Usage
+## **Uso**  
 
-1. Open the application in your web browser (typically at http://localhost:8501)
-2. Use the sidebar to adjust settings:
-   - Update interval: How frequently the data refreshes (in seconds)
-   - History length: How many data points to keep in the historical charts
+1. Abra a aplicação no seu navegador (geralmente em [http://localhost:8501](http://localhost:8501)).  
+2. Use a barra lateral para ajustar as configurações:  
+   - **Intervalo de atualização:** Define a frequência de atualização dos dados (em segundos).  
+   - **Tamanho do histórico:** Define quantos pontos de dados serão mantidos nos gráficos históricos.  
 
-3. View real-time metrics:
-   - Main dashboard shows current CPU, memory and disk usage with gauges
-   - Detailed tabs provide historical trends and additional metrics
-   - CPU tab shows per-core usage
-   - Memory tab displays detailed memory statistics
-   - Disk tab provides usage breakdown by partition
+3. Visualize as métricas em tempo real:  
+   - O **painel principal** exibe o uso atual de CPU, memória e disco com indicadores gráficos.  
+   - As **abas detalhadas** mostram tendências históricas e métricas adicionais:  
+     - **Aba CPU:** Mostra o uso por núcleo.  
+     - **Aba Memória:** Exibe estatísticas detalhadas sobre o uso da memória.  
+     - **Aba Disco:** Fornece um detalhamento do uso por partição.  
 
-## Requirements
+## **Requisitos**  
 
-- Python 3.7+
-- Streamlit
-- psutil
-- plotly
-- pandas
-
-## License
-
-This project is open source and available under the MIT License.
+- Python 3.7+  
+- Streamlit  
+- psutil  
+- plotly  
+- pandas  
