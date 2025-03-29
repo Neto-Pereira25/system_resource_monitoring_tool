@@ -13,7 +13,11 @@ Uma aplicação Streamlit para monitoramento de recursos do sistema (CPU, memór
 ## **Instalação**  
 
 1. Clone este repositório.  
-2. Crie um ambiente virtual e ative-o:  
+```bash
+git clone git@github.com:Neto-Pereira25/system_resource_monitoring_tool.git
+cd system_resource_monitoring_tool
+```
+3. Crie um ambiente virtual e ative-o:  
 
 ```bash
 python -m venv venv
@@ -26,7 +30,10 @@ venv\Scripts\activate      # Windows
 ```bash
 pip install -r requirements.txt
 ```  
-
+ou
+```bash
+pip install streamlit psutil plotly pandas
+```
 4. Execute a aplicação:  
 
 ```bash
